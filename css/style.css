@@ -141,6 +141,13 @@ body {
   margin: 0;
 }
 
+.header__item:hover {
+  color: #01835e;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: underline;
+}
+
 .header__buttons {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -212,6 +219,13 @@ body {
   margin: 0px 35px 0px 0px;
 }
 
+.button_1:hover {
+  color: #01835e;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  text-decoration: underline;
+}
+
 .button_2 {
   margin: 0px;
   max-height: 50px;
@@ -231,23 +245,21 @@ body {
           flex: inline-block;
 }
 
+.btn:hover {
+  background-color: #01835e;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
 .intro {
   height: 895px;
   background: url("../img/BG.jpg") no-repeat center/cover;
 }
 
 .intro__text {
-  margin: 175px 0px 0px 0px;
+  padding: 175px 0px 0px 0px;
   width: 100%;
   max-width: 440px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  float: left;
 }
 
 .intro__title {
@@ -273,8 +285,21 @@ body {
 }
 
 @media (max-width: 768px) {
+  .intro__text {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center;
+    margin: 0 auto;
+  }
   .header__menu {
     display: none;
+  }
+  .intro {
+    background: url("img/background/avatar.jpg") 0 0 no-repeat/contain;
   }
 }
 
@@ -407,8 +432,7 @@ body {
 
 .column__image {
   width: 100%;
-  width: 390px;
-  height: 463.65px;
+  max-width: 390px;
   background: url(.jpg), #C4C4C4;
   border-radius: 12px;
 }
@@ -436,6 +460,15 @@ body {
     -ms-flex-item-align: center;
         -ms-grid-row-align: center;
         align-self: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .info__columns {
+    margin: 0 auto;
+  }
+  .column {
+    margin: 0 0 40px;
   }
 }
 
@@ -591,6 +624,7 @@ body {
 
 .footer__inner {
   padding: 95px 0px 0px 0px;
+  display: inline-block;
 }
 
 .footer__menu {
@@ -613,6 +647,12 @@ body {
 
 .footer__item:last-child {
   margin: 0;
+}
+
+.footer__item:hover {
+  color: #000;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .Alivio {
